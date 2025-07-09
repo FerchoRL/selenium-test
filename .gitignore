@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.env
+
+# Mac OS
+.DS_Store
+
+# Logs
+*.log
+
+# Reportes de pruebas (si usas mochawesome u otros)
+reports/
+coverage/
+
+# IDEs
+.vscode/
+.idea/
+
+# ChromeDriver cache o temp files (si los llegas a usar)
+chromedriver.log
+
+# Archivos temporales del sistema
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Archivos de lock (puedes quitar esto si los comiteas intencionalmente)
+package-lock.json
