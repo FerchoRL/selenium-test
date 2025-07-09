@@ -51,3 +51,50 @@ npm install
 Fercho RL
 Proyecto personal de práctica con Selenium + JavaScript
 Julio 2025
+
+
+## 🧪 Running Tests
+
+This project uses **Mocha** as the test runner and **Chai** for assertions.
+
+### ✅ Run All Tests
+
+To execute all tests inside the `tests/` folder:
+
+```bash
+npm test
+```
+This runs all files matching the pattern defined in package.json, typically:
+
+"scripts": {
+  "test": "mocha tests/**/*.test.js"
+}
+
+## ▶️ Run a Specific Test File
+
+npx mocha tests/login/02.-loginActions.test.js
+
+Or create a custom script in package.json for convenience:
+
+```json
+"scripts": {
+  "test:loginActions": "mocha tests/login/02.-loginActions.test.js"
+}
+```
+
+Then run: npm run test:loginActions
+
+
+## 🔬 Run a Single Test or Suite with .only
+
+```js
+describe.only('Login Actions Test', function () {
+  // Only this suite will run
+});
+
+it.only('should perform the login flow', async () => {
+  // Only this test will run
+});
+
+```
+Remove .only when you're ready to run the full test suite again.
